@@ -1,0 +1,17 @@
+<html>
+    <head>
+<script>
+function sprawdzprzystosc(){
+    var liczba= document.getElementById('pole').value;
+    if(liczba%2==0) document.getElementById('wynik').innerHTML='liczba jest parzysta';
+    else document.getElementById('wynik').innerHTML='liczba jest nie parzysta';
+}
+</script>
+    </head>
+    <body>
+        <input type="text" id="pole">
+        <input type="button" value="sprawdz parzystość liczby" onclick="sprawdzprzystosc()">
+
+<div id="wynik"></div>
+    </body>
+</html>
